@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShuApp - 写真とテキストのシンプルなSNS</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      color: #1e293b;
+      margin: 0;
+      padding: 0;
+      background-color: #f8fafc;
+    }
+    .hero {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #ffffff;
+      text-align: center;
+      padding: 64px 20px;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin: 0 0 12px 0;
+      letter-spacing: 0.05em;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 28px auto;
+      opacity: 0.95;
+    }
+    .badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+    .btn-download {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #2563eb;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.15s ease;
+    }
+    .btn-download:hover {
+      transform: translateY(-2px);
+    }
+    .container {
+      max-width: 800px;
+      margin: -24px auto 40px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background-color: #ffffff;
+      padding: 28px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 1.25rem;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .feature-item {
+      background-color: #f1f5f9;
+      padding: 16px;
+      border-radius: 8px;
+    }
+    .feature-item h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.05rem;
+      color: #0f172a;
+    }
+    .feature-item p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+    .notice {
+      background-color: #fef2f2;
+      border-left: 4px solid #ef4444;
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: #991b1b;
+    }
+    .footer {
+      text-align: center;
+      padding: 24px 16px 40px 16px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .footer-links {
+      margin-bottom: 12px;
+    }
+    .footer-links a {
+      color: #2563eb;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="badge">Android版 Ver 0.1.0 (Beta) / 16歳以上対象</div>
+    <h1>ShuApp</h1>
+    <p>写真とテキストだけでつながる、シンプルで軽快なSNSアプリケーション。</p>
+    <a href="https://github.com/shuroru/ShuApp/releases/download/Bata/ShuApp.apk" class="btn-download">
+      Android版をダウンロード (APK)
+    </a>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>ShuAppの特徴</h2>
+      <div class="features">
+        <div class="feature-item">
+          <h3>写真とテキスト専用</h3>
+          <p>動画などの重たい機能はなく、日々の写真や言葉をサクサク投稿・閲覧できます。</p>
+        </div>
+        <div class="feature-item">
+          <h3>安心のプライバシー設計</h3>
+          <p>専用サーバーでデータを安全に管理し、個人情報を外部へ販売・提供することはありません。</p>
+        </div>
+        <div class="feature-item">
+          <h3>Googleアカウントで簡単開始</h3>
+          <p>面倒なパスワード設定は不要。お持ちのGoogleアカウントですぐに始められます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>ご利用にあたって（年齢制限・インストール）</h2>
+      <div class="notice">
+        <strong>【重要】年齢制限について：</strong><br>
+        安全上の配慮および関連法令の遵守に基づき、本アプリは<strong>16歳以上の方のみ</strong>ご利用いただけます。16歳未満の方は登録・利用できません。
+      </div>
+      <p style="font-size: 0.95rem; margin-top: 16px;">
+        <strong>APKファイルのインストール方法：</strong><br>
+        ダウンロードした <code>ShuApp.apk</code> を開き、Android端末の画面の案内に従って「提供元不明のアプリ」のインストールを許可して導入してください。
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.io">利用規約</a>
+      <a href="https://github.io">プライバシーポリシー</a>
+      <a href="mailto:shurorumail+support@gmail.com">お問い合わせ</a>
+    </div>
+    <div>&copy; 2026 Shuroru. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
